@@ -1,5 +1,5 @@
 # hmm
-Implementation of Hidden Markov Models (HMMs) algorithms in Python.
+Implementation of Hidden Markov Models (HMMs) in Python.
 * [HMM_guide.ipynb](HMM_guide.ipynb) is a guide for implementing the HMM algorithms (forward, backward and Viterbi).
 * [hmm.py](hmm.py) contains the implementations described in the guide.
 * [test.py](test.py) contains an example of usage.
