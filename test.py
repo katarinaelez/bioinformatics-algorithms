@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
 from __future__ import print_function
-from hmm import check_transitions, check_emissions, forward, backward, viterbi, traceback
 from utils import print_matrix, print_matrix_p
+
+import hmm
 
 #define model
 states = ['b','y','n','e']
@@ -20,28 +21,28 @@ emissions = {'y' : {'A':0.1, 'C':0.4, 'G':0.4, 'T':0.1},
     }
 
 #check probability values
-assert check_transitions(states,transitions) != 'error'
-assert check_emissions(states,emissions) != 'error'
+assert hmm.check_transitions(states,transitions) != 'error'
+assert hmm.check_emissions(states,emissions) != 'error'
 
 #sequence
 sequence = 'ATGCG'
 
 #forward algorithm
-F = forward(states,transitions,emissions,sequence)
+F = hmm.forward(states,transitions,emissions,sequence)
 print_matrix(F,states,sequence)
 print('\n')
 
 #backward algorithm
-F = backward(states,transitions,emissions,sequence)
+F = hmm.backward(states,transitions,emissions,sequence)
 print_matrix(F,states,sequence)
 print('\n')
 
 #viterbi algorithm
-F, FP = viterbi(states,transitions,emissions,sequence)
+F, FP = hmm.viterbi(states,transitions,emissions,sequence)
 print_matrix(F,states,sequence)
 print('\n')
 print_matrix_p(FP,states,sequence)
 print('\n')
-path = traceback(states,FP)
+path = hmm.traceback(states,FP)
 print(path)
 print('- '+' '.join(sequence)+' -')
