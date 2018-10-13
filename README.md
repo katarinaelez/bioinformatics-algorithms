@@ -1,9 +1,9 @@
-# hmm
-Implementation of Hidden Markov Models (HMMs) in Python.
-* [HMM_guide.ipynb](HMM_guide.ipynb) is a guide for implementing the HMM algorithms (forward, backward and Viterbi).
-* [hmm.py](hmm.py) contains the implementations described in the guide.
-* [test.py](test.py) contains an example of usage.
-* [utils.py](utils.py) contains some useful functions.
+# bioinformatics-algorithms
+* [hmm](hmm) - Implementation of Hidden Markov Models
+  * [HMM_guide.ipynb](HMM_guide.ipynb) is a guide for implementing the HMM algorithms (forward, backward and Viterbi).
+  * [hmm.py](hmm.py) contains the implementations described in the guide.
+  * [test.py](test.py) contains an example of usage.
+  * [utils.py](utils.py) contains some useful functions.
 
 ## Getting started
 
@@ -19,7 +19,7 @@ pip install notebook
 
 ### Installation
 ```bash
-git clone https://github.com/evgenije/hmm
+git clone https://github.com/evgenije/bioinformatics-algorithms
 ```
 
 ## License
