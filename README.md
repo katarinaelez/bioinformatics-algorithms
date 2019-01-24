@@ -19,7 +19,7 @@ pip install notebook
 
 ### Installation
 ```bash
-git clone https://github.com/evgenije/bioinformatics-algorithms
+git clone https://github.com/katarinaelez/bioinformatics-algorithms
 ```
 
 ## License
